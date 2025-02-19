@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gdansk NBS Location SDSS</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Gdansk NBS Location SDSS</h1>
+            <div class="indicators">
+                <h2>Location Indicators</h2>
+                
+                <div class="indicator-group">
+                    <h3>Population Density</h3>
+                    <input type="range" id="population" min="0" max="100" value="33">
+                    <span id="populationValue">33%</span>
+                </div>
+
+                <div class="indicator-group">
+                    <h3>Competition Proximity</h3>
+                    <input type="range" id="competition" min="0" max="100" value="33">
+                    <span id="competitionValue">33%</span>
+                </div>
+
+                <div class="indicator-group">
+                    <h3>Public Transport</h3>
+                    <input type="range" id="transport" min="0" max="100" value="34">
+                    <span id="transportValue">34%</span>
+                </div>
+
+                <button id="analyze">Analyze Location</button>
+                <div id="results"></div>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
